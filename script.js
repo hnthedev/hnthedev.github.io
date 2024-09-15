@@ -9,7 +9,9 @@ AboutBtn.addEventListener('click', function() {
     if (!window.matchMedia('(max-width: 720px)').matches && !CurrentlyOpen) {
         document.getElementById('box').style.transform='translate(50%,-50%)';
         CurrentlyOpen = true;
-    }; 
+    } else {
+        CurrentlyOpen = true;
+    }
     document.getElementById('information').style.opacity = 1;
 })
 
