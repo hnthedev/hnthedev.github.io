@@ -1,6 +1,6 @@
 window.setTimeout(function() {
     document.getElementById('box').style.opacity = '1';
-}, 100);
+}, 600);
 
 const AboutBtn = document.getElementById("AboutBtn");
 var CurrentlyOpen = false;
