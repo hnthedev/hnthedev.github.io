@@ -1,140 +1,114 @@
 body {
-    background-color: #141414;
+    background-color: #161616;
     color: #e7e4dd;
     opacity: 1;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: monospace;
     user-select: none;
+    font-family: Consolas;
 }
+@media screen and (min-width:720px) {
+    h1 {
+        font-family: 'Major Mono Display', monospace;
+        margin-bottom: 0;
+        font-size: xx-large;
+    }
 
-#top {
-    width: 100%;
-    height: 50px;
-    padding-top: 10px;
-    display: flex;
-}
-#pageTitle {
-    width: 20%;
-    text-align: center;
-    height: 100%;
-    color: white;
-    transition: ease-out;
-}
-#navi {
-    width: 70%;
-    display: flex;
-    height: 100%;
-}
+    h3 {
+        font-family: 'Montserrat',monospace;
+        font-weight: 500;
+        font-size: medium;
+        margin-top: 0;
+    }
 
-@keyframes glowaf {
-    0% {color: white;}
-    30% {color: dodgerblue;}
-    40% {color: rgb(2, 196, 255);}
-    80% {color: dodgerblue;}
-    100% {color: white;}
-}
-#pageTitle:hover{
-    animation-name: glowaf;
-    animation-duration: 3s;
-    cursor: pointer;
-}
+    #box {
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        transition: ease 0.4s;
+        width: 25%;
+        z-index: 2;
+    }
 
+    #stuff {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
 
-.topBtn {
-    margin-top: auto;
-    margin-left: 10%;
-    font-weight: 600;
-    font-size: large;
-    transition: ease 0.3s;
-}
-.topBtn:hover {
-    color:dodgerblue;
-    cursor: pointer;
-    text-decoration: underline;
-}
+    #stuff p{
+        font-family: Consolas;
+        font-style: italic;
+    }
+
+    .clickable:hover {
+        color: rgb(155, 255, 255);
+        cursor: pointer;
+    }
 
 
 
+    #information {
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        transition: ease 0.4s;
+        width: 30%;
+        z-index: 1;
+    }
+}
+@media screen and (max-width:720px){
+    h1 {
+        font-family: 'Major Mono Display', monospace;
+        margin-bottom: 0;
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-family: 'Montserrat',monospace;
+        font-weight: 500;
+        font-size: medium;
+        margin-top: 0;
+    }
+
+    #box {
+        text-align: center;
+        opacity: 0;
+        transition: ease 0.4s;
+        width: 25%;
+        z-index: 2;
+        margin: 10vh auto;
+    }
+
+    #stuff {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    #stuff p{
+        font-family: Consolas;
+        font-style: italic;
+    }
+
+    .clickable:hover {
+        color: rgb(155, 255, 255);
+        cursor: pointer;
+    }
 
 
 
-
-#main {
-    width: 100%;
-    margin-top: 40px;
-    display: flex;
-}
-#avatar {
-    width: 40%;
-    margin-left: 10vw;
-    margin-top: 40px;
-}
-.placeholder {
-    width: 70%;
-    height: 30vw;
-    position: relative;
-}
-.im-blur, .im {
-    background-image: url("images/avt.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.im-blur {
-    filter: blur(20px);
-}
-#bigavtText {
-    width: 100%;
-    height: 100%;
-    font-family: 'Major Mono Display';
-    font-size: 3vw;
-    transform: rotate(-90deg);
-    font-weight: bolder;
-    margin-left: -1vw;
-    margin-top: 5vh;
-}
-
-
-
-
-
-
-#someInfo {
-    margin: auto 0;
-    width: 50%;
-    height: 100%;
-}
-#someInfo h1{
-    font-family: Abel;
-    font-size: 3vw;
-    font-weight: bold;
-}
-#someInfo p{
-    width: 80%;
-    font-family: Montserrat;
-    font-weight: bold;
-}
-#aboutBtn {
-    width: 200px;
-    height: 60px;
-    border-width: 3px;
-    border-color: white;
-    border-style: solid ;
-    color: white;
-    background-color: #141414;
-    transition: ease 0.3s;
-}
-#aboutBtn h1{
-    font-size: 2vw;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 15px;
-    font-family: 'Josefin Sans';
-}
-#aboutBtn:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
+    #information {
+        opacity: 0;
+        text-align: center;
+        transition: ease 0.4s;
+        width: 80%;
+        z-index: 1;
+        margin: 0 auto;
+    }
 }
