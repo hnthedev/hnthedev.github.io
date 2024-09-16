@@ -21,20 +21,20 @@ I created a lot of projects since i was 14 years old. Most of them are just norm
 games like Flappy Bird, 2D ver of Subway Sufers, Clock GUI and some platformer games.
 <br><br>
 But when i got a bit older, these are the projects that im really proud of:<br>
-<div style="width=100%; padding-bottom: 20px;">
-    <img src="images/hnstore.jpg" alt="hn's store checker" width="25%" style="float: left;padding: 5px;padding-right: 20px;max-height: 70px;max-width: 70px;">
-    <h3 style="font-weight: 900;margin: 0px 10px;padding-top: 10px;padding-left: 20px;">hn's store checker</h3>
-    <p style="text-align: left;color: #f2f2f299;font-size: 0.72rem;margin-top: 5px;">a software that get user's daily store<br> in a game called Valorant</p>
+<div id="appInfo">
+    <img src="images/hnstore.jpg" alt="hn's store checker" width="25%" id="appIcon">
+    <h3 id="appTitle">hn's store checker</h3>
+    <p id="description">a software that get user's daily store<br> in a game called Valorant</p>
 </div>
-<div style="width=100%; padding-bottom: 20px;">
-    <img src="images/chemistry.png" alt="hn's store checker" width="25%" style="float: left;padding: 5px;padding-right: 20px;max-height: 70px;max-width: 70px;">
-    <h3 style="font-weight: 900;margin: 0px 10px;padding-top: 10px;padding-left: 20px;">Hoá Học (Chemistry)</h3>
-    <p style="text-align: left;color: #f2f2f299;font-size: 0.72rem;margin-top: 5px;">a software that help secondary students<br> learn mostly anything about chemistry</p>
+<div id="appInfo">
+    <img src="images/chemistry.png" alt="hn's store checker" width="25%" id="appIcon">
+    <h3 id="appTitle">Hoá Học (Chemistry)</h3>
+    <p id="description"">a software that help secondary students<br> learn mostly anything about chemistry</p>
 </div>
-<div style="width=100%; padding-bottom: 20px;">
-    <img src="images/hnoverlay.png" alt="hn's store checker" width="25%" style="float: left;padding: 5px;padding-right: 20px;max-height: 70px;max-width: 70px;">
-    <h3 style="font-weight: 900;margin: 0px 10px;padding-top: 10px;padding-left: 20px;font-size: 1rem">hn's overlay</h3>
-    <p style="text-align: left;color: #f2f2f299;font-size: 0.72rem;margin-top: 5px;">a software that get other player's<br>stats when joining a valorant match</p>
+<div id="appInfo">
+    <img src="images/hnoverlay.png" alt="hn's store checker" width="25%" id="appIcon">
+    <h3 id="appTitle">hn's overlay</h3>
+    <p id="description">a software that get other player's<br>stats when joining a valorant match</p>
 </div>
 
 
@@ -46,38 +46,16 @@ ContactHTML = `
 You can contact me thru these ways:<br>
 (sorry if this look too bad im just really lazy to decorate this)
 <div style="display: flex;justify: center;width: 100%">
-<a href="https://www.facebook.com/hnthedev" title="facebook" id="social">Facebook</a>
-<a href="https://www.youtube.com/@hnthedev" title="youtube" id="social">Youtube</a>
-<a href="https://www.reddit.com/user/hnthedev/" title="reddit" id="social">Reddit</a>
-<a href="https://x.com/hnthedev" title="X" id="social">X</a>
+    <a href="https://www.facebook.com/hnthedev" title="facebook" id="social">Facebook</a>
+    <a href="https://www.youtube.com/@hnthedev" title="youtube" id="social">Youtube</a>
+    <a href="https://www.reddit.com/user/hnthedev/" title="reddit" id="social">Reddit</a>
+    <a href="https://x.com/hnthedev" title="X" id="social">X</a>
 </div>
 </p>`,
 FunHTML = `
 <h1>Fun</h1><br>
 <p style="color: #f2f2f299;line-height:1.5;">
 well there nothing fun (yet)`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const AboutBtn = document.getElementById("AboutBtn");
 const ProjectsBtn = document.getElementById("ProjectsBtn");

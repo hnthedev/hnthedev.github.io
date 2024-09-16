@@ -20,6 +20,35 @@ body {
     text-decoration: none;
 }
 
+
+#appInfo {
+    width: 100%; 
+    padding-bottom: 20px;
+}
+#description {
+    text-align: left;
+    color: #f2f2f299;
+    font-size: 0.72rem;
+    margin-top: 5px;
+}
+#appTitle {
+    font-weight: 900;
+    margin: 0px 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 1rem
+}
+#appIcon {
+    float: left;
+    padding: 5px;
+    padding-right: 20px;
+    max-height: 70px;
+    max-width: 70px;
+}
+
+
+
+
 @media (min-width:1200px) {
     
     h1 {
