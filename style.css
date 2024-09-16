@@ -15,35 +15,6 @@ body {
 }
 
 
-@keyframes changetext {
-    from {
-        content: "Hoang Nguyen";
-    }
-    25% {
-        content: "   Kojisu   ";
-    }
-    50% {
-        content: "Badvantages";
-    }
-    75% {
-        content: "HnTheDev";
-    }
-    to {
-        content: "Hoang Nguyen";
-    }
-}
-#name {
-    transition: ease 0.5s;
-}
-#name::after {
-    content: "HN";
-    animation-iteration-count: infinite;
-    animation-name: changetext;
-    animation-duration: 25s;
-    animation-delay: 5s;
-}
-
-
 
 @media (min-width:720px) {
     
