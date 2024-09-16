@@ -4,9 +4,49 @@ body {
     opacity: 1;
     font-family: monospace;
     user-select: none;
-    font-family: Consolas;
+    font-family: "Open Sans", sans-serif;
 }
+
+#meh {
+    transition: ease-in 0.3s;
+}
+#meh:hover {
+    color: aqua;
+}
+
+
+@keyframes changetext {
+    from {
+        content: "Hoang Nguyen";
+    }
+    25% {
+        content: "   Kojisu   ";
+    }
+    50% {
+        content: "Badvantages";
+    }
+    75% {
+        content: "HnTheDev";
+    }
+    to {
+        content: "Hoang Nguyen";
+    }
+}
+#name {
+    transition: ease 0.5s;
+}
+#name::after {
+    content: "HN";
+    animation-iteration-count: infinite;
+    animation-name: changetext;
+    animation-duration: 25s;
+    animation-delay: 5s;
+}
+
+
+
 @media (min-width:720px) {
+    
     h1 {
         font-family: 'Major Mono Display', monospace;
         margin-bottom: 0;
@@ -39,12 +79,14 @@ body {
     }
 
     #stuff p{
-        font-family: Consolas;
+        font-family: "Open Sans", sans-serif;
         font-style: italic;
     }
-
+    .clickable {
+        transition: ease-in-out 0.3s;
+    }
     .clickable:hover {
-        color: rgb(155, 255, 255);
+        color: rgb(110, 255, 255);
         cursor: pointer;
     }
 
@@ -56,7 +98,7 @@ body {
         top: 50%;
         left: 25%;
         transform: translate(-50%,-50%);
-        text-align: center;
+        text-align: justify;
         transition: ease 0.4s;
         width: 30%;
         z-index: 1;
@@ -92,12 +134,12 @@ body {
     }
 
     #stuff p{
-        font-family: Consolas;
+        font-family: "Open Sans", sans-serif;
         font-style: italic;
     }
 
     .clickable:hover {
-        color: rgb(155, 255, 255);
+        color: rgb(110, 255, 255);
         cursor: pointer;
     }
 
@@ -105,7 +147,7 @@ body {
 
     #information {
         opacity: 0;
-        text-align: center;
+        text-align: justify;
         transition: ease 0.4s;
         width: 80%;
         z-index: 1;
